@@ -3,12 +3,14 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+const webpack = require('webpack')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
-
+//var DEV_HOST = JSON.stringify('http://qqt.ruimofang.com:80')
+//var PUB_HOST = JSON.stringify('http://qqt.ruimofang.com:80')
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
